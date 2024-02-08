@@ -9,7 +9,6 @@ class Games(models.Model):
     main_category = models.ForeignKey(Main_category, on_delete=models.CASCADE)
     image = models.ImageField(upload_to='game_img', null=True, blank=True)
     description = models.CharField(max_length=500, null=False, blank = False)
-    img = models.ImageField(upload_to='prod')
     status = models.BooleanField(default = False, help_text="0-show,1-hidden")
     
 
