@@ -18,7 +18,7 @@ def view_cart(request):
         else:
             messages.info(request, 'Login to continue')
         context = { 'ca' : ca}
-        return render(request, 'cart/cart.html', context)
+        return render(request, 'cart/Cart.html', context)
     else:
         return redirect('/')
 
