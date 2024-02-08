@@ -125,14 +125,6 @@
                     <li class="dropdown nav-item">
                         <a class="dropdown-toggle" data-bs-toggle="dropdown" href="#" id="dropdownAccount" aria-expanded="false"> <img class="img-xs rounded-circle" src="assets/imgs/people/avatar2.jpg" alt="User"></a>
                         <div class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdownAccount">
-                            <a class="dropdown-item" href="#"><i class="material-icons md-perm_identity"></i>Edit Profile</a>
-                            <a class="dropdown-item" href="#"><i class="material-icons md-settings"></i>Account Settings</a>
-                            <a class="dropdown-item" href="#"><i class="material-icons md-account_balance_wallet"></i>Wallet</a>
-                            <a class="dropdown-item" href="#"><i class="material-icons md-receipt"></i>Billing</a>
-                            <a class="dropdown-item" href="#"><i class="material-icons md-help_outline"></i>Help center</a>
-                            <div class="dropdown-divider"></div>
-                            <a class="dropdown-item text-danger" href="#"><i class="material-icons md-exit_to_app"></i>Logout</a>
-                        </div>
                     </li>
                 </ul>
             </div>
@@ -141,7 +133,7 @@
             <div class="row">
                 <div class="col-6">
                     <div class="content-header">
-                        <h2 class="content-title">A Category</h2>
+                        <h2 class="content-title">Add Category</h2>
                         
                     </div>
                 </div>
@@ -150,7 +142,7 @@
                 <form  method="post"  enctype="multipart/form-data">
                     {% csrf_token %}
                     
-                    <div class="col-lg-9">
+                    <div class="col-lg-7">
                         <div class="shadow">
                             <div class="card-body ">
                                 <div class="row">
@@ -161,32 +153,37 @@
 
                                         <div class="mb-4">
                                             <label class="form-label">Category title</label>
+                                            <br>
                                             {{form.name}}
                                         </div>
                                         
                                         <div class="mb-4">
                                             <label class="form-label">Description</label>
+                                            <br>
                                             {{form.description}}
                                         </div>
 
                                         <div class="mb-4">
                                             <label class="form-label">Offer description</label>
+                                            <br>
                                             {{form.category_offer_description}}
                                         </div>
 
                                         <div class="mb-4">
-                                            <label class="form-label">Offer price</label>
+                                            <label class="form-label">Offer</label>
+                                            <br>
                                             {{form.category_offer}}
                                         </div>
 
 
                                         <div class="mb-4">
                                             <label class="form-label">Status</label>
-                                            
+                                            <br>
                                             {{form.status}}
                                         </div>
                                         <div class="mb-4">
                                             <label class="form-label">Image</label>
+                                            <br>
                                             {{form.image}}
                                         </div>
                                         

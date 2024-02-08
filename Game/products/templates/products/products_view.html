@@ -105,7 +105,7 @@
                     <li class="nav-item">
                         <a class="nav-link btn-icon" href="#">
                             <i class="material-icons md-notifications animation-shake"></i>
-                            <span class="badge rounded-pill">3</span>
+                            <span class="badge rounded-pill"></span>
                         </a>
                     </li>
                     <li class="nav-item">
@@ -123,18 +123,7 @@
                             <a class="dropdown-item" href="#"><img src="{% static 'assets/imgs/theme/flag-cn.png' %}" alt="Français">中国人</a>
                         </div>
                     </li>
-                    <li class="dropdown nav-item">
-                        <a class="dropdown-toggle" data-bs-toggle="dropdown" href="#" id="dropdownAccount" aria-expanded="false"> <img class="img-xs rounded-circle" src="assets/imgs/people/avatar2.jpg" alt="User"></a>
-                        <div class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdownAccount">
-                            <a class="dropdown-item" href="#"><i class="material-icons md-perm_identity"></i>Edit Profile</a>
-                            <a class="dropdown-item" href="#"><i class="material-icons md-settings"></i>Account Settings</a>
-                            <a class="dropdown-item" href="#"><i class="material-icons md-account_balance_wallet"></i>Wallet</a>
-                            <a class="dropdown-item" href="#"><i class="material-icons md-receipt"></i>Billing</a>
-                            <a class="dropdown-item" href="#"><i class="material-icons md-help_outline"></i>Help center</a>
-                            <div class="dropdown-divider"></div>
-                            <a class="dropdown-item text-danger" href="#"><i class="material-icons md-exit_to_app"></i>Logout</a>
-                        </div>
-                    </li>
+                    
                 </ul>
             </div>
         </header>
@@ -144,19 +133,7 @@
                     <h2 class="content-title card-title">Products</h2>
                     <p>Lorem ipsum dolor sit amet.</p>
                 </div>
-                <div>
-                    <form action="">
-                        <div class="mb-4">
-                            <label >Select Addres:
-                            </label>
-                            <select class="form-select" name="addressId">
-                                <option> Select </option>    
-                                <option value="id">hai</option>
-                            </select>
-                        </div>
-                        <a href="" class="btn btn-primary btn-sm rounded"></a>
-                    </form>
-                </div>
+                
                 <div>
                     <a href="{% url 'products_add' %}" class="btn btn-primary btn-sm rounded">Create new</a>
                 </div>
