@@ -342,8 +342,8 @@ def wallet_order(request):
             for w in wallet:
                 wallet_amount = wallet_amount + w.amount
             if float(total) >= float(wallet_amount):
-                totel_price = total-wallet_amount
-                wal_amount = wallet_amount
+                totel_price = float(total)-float(wallet_amount)
+                wal_amount = float(wallet_amount)
                 request.session['wallet_amount'] = wal_amount
             else:
                 totel_price=1
@@ -352,6 +352,7 @@ def wallet_order(request):
                 wal_amount = float(total)-1
                 request.session['wallet_amount'] = wal_amount
             cart_item=Cart.objects.filter(user=request.user)
+            coupon=None
             if 'coupon' in request.session:
                 coupon = Coupon.objects.get(coupon_code = request.session['coupon'])
             for item in cart_item:

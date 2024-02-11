@@ -211,7 +211,7 @@
                                             <div class="mb-4">
                                                 <label >Select Addres:
                                                 </label>
-                                                <select class="form-select" name="addressId">
+                                                <select class="form-select" name="addressId" required>
                                                     <option> Select </option>
                                                     {% for ad in user_address %}
                                                     <option value="{{ad.id}}">{{ ad.full_name }} - {{ ad.house_no }} - {{ ad.post_code }} - {{ ad.state }}- {{ ad.street }}, {{ ad.phone_no  }} - {{ ad.city }}</option>
