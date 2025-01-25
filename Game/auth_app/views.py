@@ -411,7 +411,6 @@ def searchproduct(request):
             
                 if product:
                     redirect_url = reverse("user_product_view", args=[product.catagory.main_category.id, product.catagory.id, product.id])
-                    print(redirect_url)
                     return redirect(redirect_url)
                 else:
                     messages.info(request,"No Product Matched Your Searchlist")
